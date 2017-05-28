@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1496014741 source:d:\juegofinal\main.cpp
+	<iostream>
+	<stdio.h>
+	<windows.h>
+	<conio.h>
+	"Nave.h"
+
+1496014663 d:\juegofinal\include\nave.h
+
