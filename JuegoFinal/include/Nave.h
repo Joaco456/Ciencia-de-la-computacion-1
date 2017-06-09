@@ -12,6 +12,10 @@ class Nave
     public:
         Nave(int ,int, int, int);
         void coordenada(int,int);
+        int X() {return x;}
+        int Y() {return y;}
+        int V() {return vidas;}
+        void BajarCorazones() {corazones--;}
         void ocultar();
         void crear();
         void borrar();

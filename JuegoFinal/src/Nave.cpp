@@ -51,11 +51,16 @@ void Nave::mover(){
     if(kbhit()){
         char tecla = getch();
         borrar();
+        if(tecla == 'a' && x>2)x--;
+        if(tecla == 'd' && x+5<78)x++;
+        if(tecla == 'w' && y>3)y--;
+        if(tecla == 's'&& y+3<33)y++;
+
         if(tecla== IZQUIERDA && x>3)x--;
         if(tecla== DERECHA && x+6 <78)x++;
         if(tecla== ARRIBA && y>4)y--;
         if(tecla==ABAJO && y+3 <33)y++;
-        if(tecla=='e')corazones--;
+        if(tecla=='e')corazones--;//bajar coras
         crear();
         VidaCorazones();
     }
@@ -74,20 +79,20 @@ void Nave::Morir(){
         coordenada(x,y);   printf("   **    ");//EXPLOCIONES
         coordenada(x,y+1); printf("  ****   ");
         coordenada(x,y+2); printf("   **    ");
-        Sleep(350);
+        Sleep(200);
 
         borrar();
         coordenada(x,y);   printf(" * ** * ");//EXPLOCIONES 2
         coordenada(x,y+1); printf("  ****  ");
         coordenada(x,y+2); printf(" * ** * ");
-        Sleep(350);
+        Sleep(200);
 
         borrar();
         vidas--;
+        crear();
         corazones ==3;
         VidaCorazones();
-        crear();
+
     }
 }
-
 
