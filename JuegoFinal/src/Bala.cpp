@@ -3,7 +3,7 @@
 #include <windows.h>
 #include <conio.h>
 #include "Nave.h"
-#include "Asteroide.h"
+#include "Kamikaze.h"
 #include "Bala.h"
 #include <stdlib.h>
 #include <vector>
@@ -14,29 +14,18 @@ Bala::Bala(int _x, int _y)
   x = _x;
   y = _y;
 }
-void Bala::coordenada(int x, int y)
-{
-    HANDLE identi;
-    identi = GetStdHandle(STD_OUTPUT_HANDLE);
-    COORD pos_cursor;
-    pos_cursor.X = x;
-    pos_cursor.Y = y;
-
-    SetConsoleCursorPosition(identi,pos_cursor);
-}
 void Bala::mover()
 {
-    coordenada(x,y); printf("   ");
+    coordenadas(x,y); printf(" ");
+    //if(y>4)
     y--;
-    coordenada(x,y); printf("%c",248);
+    coordenadas(x,y); printf("%c",248);
 }
 bool Bala::fuera()
 {
-  if(y==5) return true;
-  return false;
+  if(y == 3)
+    return true;
+  else
+    return false;
 }
-/*Bala::~Bala()
-{
 
-}
-*/
