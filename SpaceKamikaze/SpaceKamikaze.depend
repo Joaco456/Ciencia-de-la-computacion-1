@@ -1,0 +1,48 @@
+# depslib dependency file v1.0
+1498787228 source:d:\spacekamikaze\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<list>
+	<windows.h>
+	<conio.h>
+	"Nave.h"
+	"Kamikaze.h"
+	"Boss.h"
+	"Bala.h"
+
+1498787031 d:\spacekamikaze\include\nave.h
+
+1498772548 d:\spacekamikaze\include\kamikaze.h
+
+1498772548 d:\spacekamikaze\include\bala.h
+
+1498773226 source:d:\spacekamikaze\src\bala.cpp
+	<iostream>
+	<stdio.h>
+	<windows.h>
+	<conio.h>
+	"Nave.h"
+	"Kamikaze.h"
+	"Bala.h"
+	<stdlib.h>
+	<vector>
+
+1498787132 source:d:\spacekamikaze\src\kamikaze.cpp
+	<iostream>
+	<stdio.h>
+	<windows.h>
+	<conio.h>
+	"Nave.h"
+	"Kamikaze.h"
+	<stdlib.h>
+
+1498772548 source:d:\spacekamikaze\src\nave.cpp
+	<iostream>
+	<stdio.h>
+	<windows.h>
+	<conio.h>
+	"Nave.h"
+
+1498778585 d:\spacekamikaze\include\boss.h
+
